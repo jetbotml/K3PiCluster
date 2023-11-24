@@ -8,15 +8,14 @@
 5. 5-Port Gigabit Ethernet Unmanaged Switch https://www.amazon.com/gp/product/B07S98YLHM
 6. Cat6 Ethernet Cables https://www.amazon.com/gp/product/B00NQA2H3O
 
-## Software Needed
+## Software Used
 
-
-### Software on laptop
+### Laptop
 1. WIndows 11 laptop
 2. Raspberry Pi Imager https://www.raspberrypi.com/software/
 3. win32 disk imager https://win32diskimager.org/
    
-### Software on Pi 
+### Raspberry Pis 
 1. Ubuntu Server 22.04.3 LTS (64-bit) from Raspberry Pi Imager
 2. K3 from https://k3s.io/
 3. 
