@@ -10,6 +10,7 @@
 
 ## Software Needed
 
+
 ### Software on laptop
 1. WIndows 11 laptop
 2. Raspberry Pi Imager https://www.raspberrypi.com/software/
