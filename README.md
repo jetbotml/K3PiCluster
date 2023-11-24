@@ -1,6 +1,6 @@
 # Setup and Configure K3 on Raspberry Pi 4/Ubuntu V22
 
-## Hardware I used
+## Hardware Used
 1. 4 Raspberry Pi 4s (1 4GB & 3 2GB) 
 2. 4 Raspberry Pi 4 Power Supply (USB-C) https://www.amazon.com/dp/B07TYQRXTK
 3. 4 32 GB SD cards
