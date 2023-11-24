@@ -19,3 +19,12 @@
 1. Ubuntu Server 22.04.3 LTS (64-bit) from Raspberry Pi Imager
 2. K3 from https://k3s.io/
 3. 
+
+## Network Configuration
+![image](https://github.com/jetbotml/K3PiCluster/assets/66527036/4209817f-952c-4ac1-95e0-bf45252cfc71)
+
+
+
+## Steps
+
+### Configure control 
