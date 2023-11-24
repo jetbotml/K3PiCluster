@@ -10,8 +10,8 @@
 
 ## Software Used
 
-### Laptop
-1. WIndows 11 laptop
+### Laptop/Desktop
+1. WIndows 11 
 2. Raspberry Pi Imager https://www.raspberrypi.com/software/
 3. win32 disk imager https://win32diskimager.org/
    
