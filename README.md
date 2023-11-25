@@ -20,7 +20,7 @@
 1. K3 from https://k3s.io/ 
 
 ## Network Configuration
-![image](https://github.com/jetbotml/K3PiCluster/assets/66527036/4209817f-952c-4ac1-95e0-bf45252cfc71  | width=100)
+![image](https://github.com/jetbotml/K3PiCluster/assets/66527036/4209817f-952c-4ac1-95e0-bf45252cfc71)
 
 ## Steps
 
