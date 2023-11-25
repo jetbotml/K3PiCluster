@@ -26,7 +26,7 @@
 
 ## Steps
 
-### Create and Configure the controlnode from Laptop/Desktop
+### Step 1: Create and Configure the controlnode from Laptop/Desktop
 1. Flash OS using Raspberry Pi Imager - Ubuntu Server 22.04.3 LTS (64-bit)
 1. Boot the Pi using the new card
 1. Powershell window (xxx.xxx.xxx.xxx = the IP your pi)
@@ -67,7 +67,7 @@
       - **.\kubectl.exe cluster-info**
       - **.\kubectl.exe config view**
 
-### Create and Configure the workernodes01-03 from Laptop/Desktop
+### Steps 2-4: Create and Configure the workernodes01-03 from Laptop/Desktop
 1. Flash OS using Raspberry Pi Imager - Ubuntu Server 22.04.3 LTS (64-bit)
 1. Boot the Pi using the new card
 1. Powershell window (xxx.xxx.xxx.xxx = the IP your pi)
