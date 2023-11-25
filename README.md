@@ -50,17 +50,20 @@
       - **sudo kubectl cluster-info**
       - **sudo kubectl config view**
       - **sudo kubectl get pods -A**
-      - **sudo kubectl cluster-info**
+      - **sudo kubectl get nodes**
       - If the above commands do not work run these, reboot and try again
         - **mkdir ~/.kube**
         - **sudo cp /etc/rancher/k3s/k3s.yaml ~/.kube/config && sudo chown $USER ~/.kube/config**
         - **sudo chmod 600 ~/.kube/config && export KUBECONFIG=~/.kube/config**
-
-1. Download and confiure kubectl (https://kubernetes.io/docs/tasks/tools)
-   - download to your desktop's user folder
+   - **exit** the ssh session (type exit)
+1. Download kubectl (https://kubernetes.io/docs/tasks/tools) download to your desktop's user folder
+1. Powershell window - Setup Laptop/Desktop to connect and run kubectl
    - **mkdir ~/.kube**
    - **ssh ubuntu@xxx.xxx.xxx.xxx "sudo cat /etc/rancher/k3s/k3s.yaml" > .kube/config**
    - **notepad.exe .kube/config** Update the IP to the pi IP
    - run commands
-     - **.\kubectl.exe get nodes**
-     - **.\kubectl.exe get pods -A**
+      - **.\kubectl.exe get nodes**
+      - **.\kubectl.exe get pods -A**
+      - **.\kubectl.exe cluster-info**
+      - **.\kubectl.exe config view**
+
