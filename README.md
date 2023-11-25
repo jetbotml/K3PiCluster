@@ -14,6 +14,8 @@
 1. WIndows 11 
 1. Raspberry Pi Imager https://www.raspberrypi.com/software/
 1. win32 disk imager https://win32diskimager.org/
+1. kubectl https://kubernetes.io/docs/tasks/tools/
+1. Kubernetes Dashboard https://github.com/kubernetes/dashboard
    
 ### Raspberry Pis 
 1. Ubuntu Server 22.04.3 LTS (64-bit) from Raspberry Pi Imager
@@ -41,4 +43,12 @@
         - dtoverlay=disable-bt
    - **sudo nano /boot/firmware/cmdline.txt** append the following to the end of the first line
       - cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory swapaccount=1
-   - 
+   - **sudo reboot now**
+1. kubectl - Download and confiure (https://kubernetes.io/docs/tasks/tools)
+   - download to your desktop's user folder
+   - **mkdir ~/.kube**
+   - **ssh ubuntu@xxx.xxx.xxx.xxx "sudo cat /etc/rancher/k3s/k3s.yaml" > .kube/config**
+   - **notepad.exe .kube/config** Update the IP to the pi IP
+   - run commands
+     - **.\kubectl.exe get nodes**
+     - **.\kubectl.exe get pods -A**
