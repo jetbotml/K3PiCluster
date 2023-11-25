@@ -67,3 +67,21 @@
       - **.\kubectl.exe cluster-info**
       - **.\kubectl.exe config view**
 
+### Create and Configure the workernodes01-03 from Laptop/Desktop
+1. Flash OS using Raspberry Pi Imager - Ubuntu Server 22.04.3 LTS (64-bit)
+1. Boot the Pi using the new card
+1. Powershell window (xxx.xxx.xxx.xxx = the IP your pi)
+   - **ssh ubuntu@xxx.xxx.xxx.xxx**   Note: default password is ubuntu and you will need to change it on first login.
+   - **exit** the ssh session (type exit)
+   - **cat ~/.ssh/id_rsa.pub | ssh ubuntu@xxx.xxx.xxx.xxx "cat >>~/.ssh/authorized_keys"** This will load the existing key to the pi authorized keys. 
+   - **ssh ubuntu@xxx.xxx.xxx.xxx** should not need to login since it is useing the key now
+   - **sudo apt-get update**
+   - **sudo apt-get upgrade -y**
+   - **sudo nano /boot/firmware/config.txt** add the following two lines under the [all] section
+        - dtoverlay=disable-wifi
+        - dtoverlay=disable-bt
+   - **sudo nano /boot/firmware/cmdline.txt** append the following to the end of the first line
+      - cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory swapaccount=1
+   - **sudo hostnamectl set-hostname workernode01**  workernode02 or workernode03
+   - **sudo reboot now**
+   - repeat for each node
