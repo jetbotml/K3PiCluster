@@ -33,7 +33,7 @@
    - **ssh ubuntu@xxx.xxx.xxx.xxx**   Note: default password is ubuntu and you will need to change it on first login.
    - **exit** the ssh session (type exit)
    - **ssh-keygen.exe** generate a key to use to connect to the pi. Accept the defaults, no password
-   - **cat C:\Users\user/.ssh/id_rsa.pub | ssh ubuntu@10.10.10.200 "cat >>~/.ssh/authorized_keys"** This will load the new key to the pi authorized keys. replace user with your user name
+   - **cat ~/.ssh/id_rsa.pub | ssh ubuntu@10.10.10.200 "cat >>~/.ssh/authorized_keys"** This will load the new key to the pi authorized keys. 
    - **ssh ubuntu@xxx.xxx.xxx.xxx** should not need to login since it is useing the key now
    - **sudo apt-get update**
    - **sudo apt-get upgrade -y**
