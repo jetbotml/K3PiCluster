@@ -20,7 +20,7 @@
 1. K3 from https://k3s.io/ 
 
 ## Network Configuration
-<img src='https://github.com/jetbotml/K3PiCluster/blob/main/NetworkConfig.png' width="75%" height="75%">
+<img src='https://github.com/jetbotml/K3PiCluster/blob/main/NetworkConfig.png' width="60%" height="60%">
 
 ## Steps
 
