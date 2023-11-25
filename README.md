@@ -2,23 +2,22 @@
 
 ## Hardware Used
 1. 4 Raspberry Pi 4s (1 4GB & 3 2GB) 
-2. 4 Raspberry Pi 4 Power Supply (USB-C) https://www.amazon.com/dp/B07TYQRXTK
-3. 4 32 GB SD cards
-4. GeeekPi Raspberry Pi Cluster Case https://www.amazon.com/gp/product/B083FDHPBH
-5. 5-Port Gigabit Ethernet Unmanaged Switch https://www.amazon.com/gp/product/B07S98YLHM
-6. Cat6 Ethernet Cables https://www.amazon.com/gp/product/B00NQA2H3O
+1. 4 Raspberry Pi 4 Power Supply (USB-C) https://www.amazon.com/dp/B07TYQRXTK
+1. 4 32 GB SD cards
+1. GeeekPi Raspberry Pi Cluster Case https://www.amazon.com/gp/product/B083FDHPBH
+1. 5-Port Gigabit Ethernet Unmanaged Switch https://www.amazon.com/gp/product/B07S98YLHM
+1. Cat6 Ethernet Cables https://www.amazon.com/gp/product/B00NQA2H3O
 
 ## Software Used
 
 ### Laptop/Desktop
 1. WIndows 11 
-2. Raspberry Pi Imager https://www.raspberrypi.com/software/
-3. win32 disk imager https://win32diskimager.org/
+1. Raspberry Pi Imager https://www.raspberrypi.com/software/
+1. win32 disk imager https://win32diskimager.org/
    
 ### Raspberry Pis 
 1. Ubuntu Server 22.04.3 LTS (64-bit) from Raspberry Pi Imager
-2. K3 from https://k3s.io/
-3. 
+1. K3 from https://k3s.io/ 
 
 ## Network Configuration
 ![image](https://github.com/jetbotml/K3PiCluster/assets/66527036/4209817f-952c-4ac1-95e0-bf45252cfc71)
@@ -27,8 +26,8 @@
 
 ### Create and Configure the controlnode
 1. Flash OS using Raspberry Pi Imager - Ubuntu Server 22.04.3 LTS (64-bit)
-2. Boot the Pi using the new card
-3. Powershell window (xxx.xxx.xxx.xxx = the IP your pi)
+1. Boot the Pi using the new card
+1. Powershell window (xxx.xxx.xxx.xxx = the IP your pi)
    - **ssh ubuntu@xxx.xxx.xxx.xxx**   Note: default password is ubuntu and you will need to change it on first login.
    - **exit** the ssh session (type exit)
    - **ssh-keygen.exe** generate a key to use to connect to the pi. Accept the defaults, no password
