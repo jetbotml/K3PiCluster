@@ -1,5 +1,7 @@
 # Setup and Configure K3 on Raspberry Pi 4/Ubuntu V22
 
+updated 12/28/23
+
 ## Hardware Used
 1. 4 Raspberry Pi 4s (1 4GB & 3 2GB) 
 1. 4 Raspberry Pi 4 Power Supply (USB-C) https://www.amazon.com/dp/B07TYQRXTK
@@ -85,3 +87,18 @@
    - **sudo hostnamectl set-hostname workernode01**  workernode02 or workernode03
    - **sudo reboot now**
    - repeat for each node
+
+### Step 5: Add workernodes to control node
+
+1. Check the network connection between the workernode and the control node
+   - ping the workernode from the control node to workernode & Wokernode to control node. 
+   - ping XXX.XXX.XXX.XXX
+   - connect from workernode to control node using port 6443
+   - telnet XXX.XXX.XXX.XXX 6443
+1. Find the secret token on the control node
+   - Path: /var/lib/rancher/k3s/server/node-token
+   - sudo cat /var/lib/rancher/k3s/server/node-token
+   - copy the node-token
+1. install K3s on the workernode
+   - watch the control node: watch -n 5 'sudo kubectl get nodes'
+   - run on each workernode: curl -sfL https://get.k3s.io | K3S_URL=https://controlnodeIP:6443 K3S_TOKEN=XXXXXX sh -
