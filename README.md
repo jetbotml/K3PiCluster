@@ -86,7 +86,8 @@ updated 12/28/23
       - cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory swapaccount=1
    - **sudo hostnamectl set-hostname workernode01**  workernode02 or workernode03
    - **sudo reboot now**
-   - repeat for each node
+   - repeat for each node OR backup workernode01 image and restore for workernode02 and 03
+     - would need to rename host for 02 and 03  - **sudo hostnamectl set-hostname workernode02** and for workernode03
 
 ### Step 5: Add workernodes to control node
 
