@@ -37,8 +37,7 @@ updated 12/28/23
    - **ssh-keygen.exe** generate a key to use to connect to the pi. Accept the defaults, no password
    - **cat ~/.ssh/id_rsa.pub | ssh ubuntu@xxx.xxx.xxx.xxx "cat >>~/.ssh/authorized_keys"** This will load the new key to the pi authorized keys. 
    - **ssh ubuntu@xxx.xxx.xxx.xxx** should not need to login since it is useing the key now
-   - **sudo apt-get update**
-   - **sudo apt-get upgrade -y**
+   - **sudo apt-get update && sudo apt-get upgrade -y**
    - **sudo nano /boot/firmware/config.txt** add the following two lines under the [all] section
         - dtoverlay=disable-wifi
         - dtoverlay=disable-bt
