@@ -1,6 +1,6 @@
 # Setup and Configure K3 on Raspberry Pi 4/Ubuntu V22
 
-updated 12/28/23
+updated 12/31/23
 
 ## Hardware Used
 1. 4 Raspberry Pi 4s (1 4GB & 3 2GB) 
@@ -89,7 +89,6 @@ updated 12/28/23
      - would need to rename host for 02 and 03  - **sudo hostnamectl set-hostname workernode02** and for workernode03
 
 ### Step 5: Add workernodes to control node
-
 1. Check the network connection between the workernode and the control node
    - ping the workernode from the control node to workernode & Wokernode to control node. 
    - ping XXX.XXX.XXX.XXX
@@ -102,3 +101,12 @@ updated 12/28/23
 1. install K3s on the workernode
    - watch the control node: watch -n 5 'sudo kubectl get nodes'
    - run on each workernode: curl -sfL https://get.k3s.io | K3S_URL=https://controlnodeIP:6443 K3S_TOKEN=XXXXXX sh -
+
+### Step 5: Add Pi to monitor and manage cluster
+1. Flash OS using Raspberry Pi Imager - Ubuntu Server 22.04.3 LTS (64-bit) OR Raspberry Pi (64-bit)
+   - Boot and update Pi
+        - Optional ssh key connection
+            - on pi create the .ssh directory: mkdir /home/pi/.ssh
+            - from Windows run: cat ~/.ssh/id_rsa.pub | ssh pi@xxx.xxx.xxx.xxx "cat >>~/.ssh/authorized_keys"
+        - sudo apt-get update && sudo apt-get upgrade -y
+
